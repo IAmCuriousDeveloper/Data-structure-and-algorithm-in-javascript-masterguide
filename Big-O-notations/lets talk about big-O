@@ -1,0 +1,74 @@
+what is big-o?
+
+Big O notation is a mathematical notation that describes the limiting behavior of a function when the argument tends towards a particular value or infinity. It is a member of a family of notations invented by Paul Bachmann, Edmund Landau, and others, collectively called Bachmann–Landau notation or asymptotic notation.
+
+The above definition is taken right from the internet.
+
+But my Short and precise definition is - its a notation use to define the worst case scenario of the program .that is the maximum time taken by the program to run is "this-big-O" only not more than that.
+
+2.why we use big-O?
+Imagine we have multiple implementations of the same function.
+How can we determine which one is the "best?"
+
+It's important to have a precise vocabulary to talk about how our code performs
+Useful for discussing trade-offs between different approaches
+When your code slows down or crashes, identifying parts of the code that are inefficient can help us find pain points in our applications
+
+we use big-O in terms of -
+Faster?
+
+but we have some other factors too
+
+Less memory-intensive?
+More readable?
+
+3.why can't we use timer function of inbuilt function to calculate the time taken by our program ? since its a data-structure in javascript.
+
+ex->
+function addUpTo(n) {
+  let total = 0;
+  for (let i = 1; i <= n; i++) {
+    total += i;
+  }
+  return total;
+}
+
+let t1 = performance.now();
+addUpTo(1000000000);
+let t2 = performance.now();
+console.log(`Time Elapsed: ${(t2 - t1) / 1000} seconds.`)
+
+The Problem with Time.
+Different machines will record different times
+The same machine will record different times!
+For fast algorithms, speed measurements may not be precise enough?
+
+Big O Notation is a way to formalize fuzzy counting.
+It allows us to talk formally about how the runtime of an algorithm grows as the inputs grow.
+
+We say that an algorithm is O(f(n)) if the number of simple operations the computer has to do is eventually less than a constant times f(n), as n increases
+
+f(n) could be linear (f(n) = n)
+f(n) could be quadratic (f(n) = n  )
+f(n) could be constant (f(n) = 1)
+f(n) could be something entirely different!
+
+in the folder see there are two files addUpTo(n) function 1 and 2 whiich gives us two big-O O(1) and O(n) respectively.
+
+then see the countupandown function and play with it which gives O(n).
+then see the nested loop version of printallpairs function which gives O(n^2).
+
+Analyzing complexity with big O can get complicated
+There are several rules of thumb that can help
+These rules won't ALWAYS work, but are a helpful starting point
+
+Arithmetic operations are constant
+Variable assignment is constant
+Accessing elements in an array (by index) or object (by key) is constant
+In a loop, the the complexity is the length of the loop times the complexity of whatever happens inside of the loop.
+
+now lets see the two unique functions logatleast5 and logatmost5 one gives O(n) and the other O(1).
+
+
+
+
