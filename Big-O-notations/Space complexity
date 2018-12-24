@@ -17,6 +17,44 @@ Thumb of rules to define space complexity
 now go and check out the example spacesum.js
 again go and check the doublespace.js
 
-thats it for this section i will continue with the next section
+one more thing i will like to discuss and that is "logarithm"
+
+if you are coming from the math background you probably used and heard the term log before.but if you don't dont be scared.i will clear it for you.
+
+log is the opposite of exponent ,just like addition is opposite of substraction and multiplication is opposite of division 
+
+We've encountered some of the most common complexities: O(1), O(n), O(n^2)
+
+Sometimes big O expressions involve more complex mathematical expressions
+
+One that appears more often than you might like is the logarithm!
+
+log2(8) === 2^3=8
+
+ formula ==> log2(value) = exponent ---> 2^exponent = value
+
+ what is 2 after the log ?
+ its the base of the log .log can have variable base. in general log = log2(log with base 2)
+
+ The logarithm of a number roughly measures the number of times you can divide that number by 2 before you get a value that's less than or equal to one.
+
+ if your program has a time complexity of logarithmic then its great 
+
+ Certain searching algorithms have logarithmic time complexity.
+
+Efficient sorting algorithms involve logarithms.
+
+Recursion sometimes involves logarithmic space complexity.
+
+
+lets quickly recap what we study in this section
+To analyze the performance of an algorithm, we use Big O Notation.
+Big O Notation can give us a high level understanding of the time or space complexity of an algorithm.
+Big O Notation doesn't care about precision, only about general trends (linear? quadratic? constant?).
+The time or space complexity (as measured by Big O) depends only on the algorithm, not the hardware used to run the algorithm.
+Big O Notation is everywhere, so get lots of practice!.
+
+
+thats it for this section i will continue with the next section.
 
 
