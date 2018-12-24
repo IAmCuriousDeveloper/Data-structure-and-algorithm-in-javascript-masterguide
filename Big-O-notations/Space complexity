@@ -1,0 +1,22 @@
+So far, we've been focusing on time complexity: how can we analyze the runtime of an algorithm as the size of the inputs increases?
+
+so what is space complexity?
+easy definition -> the space required by your program to compile or run is called space complexity.
+or
+We can also use big O notation to analyze space complexity: how much additional memory do we need to allocate in order to run the code in our algorithm?
+
+ actually there are two types of space complexity 
+ 1.with inputs 
+ 2.without inputs (auxillary space complexity)
+
+Thumb of rules to define space complexity
+1.Most primitives (booleans, numbers, undefined, null) are constant space
+2.Strings require O(n) space (where n is the string length)
+3.Reference types are generally O( n), where n is the length (for arrays) or the number of keys (for objects).
+
+now go and check out the example spacesum.js
+again go and check the doublespace.js
+
+thats it for this section i will continue with the next section
+
+
