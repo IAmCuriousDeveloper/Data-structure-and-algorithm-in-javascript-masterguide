@@ -1,0 +1,20 @@
+Now You have read Problem solving approach . now its time to see some common patterns to solve problems 
+
+some common patterns are.
+1.Frequency Counter
+2.Multiple Pointers
+3.Sliding Window
+4.Divide and Conquer
+5.Dynamic Programming
+6.Greedy Algorithms
+7.Backtracking etc.
+
+we will clear some of them here but in the near future i will make sure to add as much as i can 
+
+now lets jump into frequency counter pattern in Frequencycounter.js
+
+make sure you understand the Frequencounter problem now jump into Anagram.js
+(falls into the same Frequencounter catagory)
+
+2.time to jump into next catagory (Multiple Pointers)
+go to MultiplePointers.js

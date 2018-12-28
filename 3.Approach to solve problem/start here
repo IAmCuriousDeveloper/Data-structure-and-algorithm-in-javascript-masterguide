@@ -1,4 +1,4 @@
-In this section i will tell you how i approach to solve problem (most of the time)
+In this section i will tell you how i approach to solve problem (most of the time).
 These approaches i have learned from my teacher. and i hope i will make them clear for you too
 
 so lets write an objectives
@@ -24,7 +24,7 @@ now i'm gonna tell you THESE 5 STEPS WHICH ARE MOST IMPORTANT TO SOLVE PROBLEM.
 4.Solve/Simplify
 5.Look Back and Refactor
 
-these above steps are taken from the book "how to solve it" by george polya 
+These above steps are taken from the book "how to solve it" by george polya 
 
 step1.Understand the problem->
 1.Can I restate the problem in my own words?
@@ -84,3 +84,6 @@ Can you think of other ways to refactor?
 How have other people solved this problem?
 
 lets go the the refactor.js refactor version of our solution.
+
+That it now lets jump into section 4 Problem solving patterns.
+
