@@ -10,3 +10,4 @@ since its a datastructure and algorithm course you can start learning from where
 
 2.Performance of array and objects 
 3.approach to solve a problem
+4.problem solving patterns.
