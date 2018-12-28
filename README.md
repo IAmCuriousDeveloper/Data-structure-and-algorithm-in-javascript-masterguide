@@ -7,3 +7,6 @@ since its a datastructure and algorithm course you can start learning from where
 1.1 my introduction(optional)
 1.2 lets talk about big-O(Time complexity)
 1.3 Space complexity
+
+2.Performance of array and objects 
+3.approach to solve a problem
