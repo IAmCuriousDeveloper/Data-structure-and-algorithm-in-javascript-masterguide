@@ -13,8 +13,23 @@ we will clear some of them here but in the near future i will make sure to add a
 
 now lets jump into frequency counter pattern in Frequencycounter.js
 
-make sure you understand the Frequencounter problem now jump into Anagram.js
-(falls into the same Frequencounter catagory)
+make sure you understand the Frequenycounter problem now jump into Anagram.js
+(falls into the same Frequenycounter catagory)
 
 2.time to jump into next catagory (Multiple Pointers)
-go to MultiplePointers.js
+
+go to MultiplePointers.js(intoduction + one example)
+
+second example ->now jump to the second example countUniqueValues.js
+
+3.Sliding Window.
+This pattern involves creating a window which can either be an array or number from one position to another
+
+Depending on a certain condition, the window either increases or closes (and a new window is created)
+
+Very useful for keeping track of a subset of data in an array/string etc.
+
+now go to the maxSubarray.js to have close look what that Sliding window problem means
+
+
+
