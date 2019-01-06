@@ -29,7 +29,23 @@ Depending on a certain condition, the window either increases or closes (and a n
 
 Very useful for keeping track of a subset of data in an array/string etc.
 
-now go to the maxSubarray.js to have close look what that Sliding window problem means
+now go to the maxSubarray.js to have close look what that Sliding window problem means.
 
 
+
+4.Divide and Conquer - This pattern involves dividing a data set into smaller chunks and then repeating a process with a subset of data.
+
+This pattern can tremendously decrease time complexity
+
+for ex-> Given a sorted array of integers, write a function called search, that accepts a value and returns the index where the value passed to the function is located. If the value is not found, return -1
+
+go to search.js to see the actual solution.
+search([1,2,3,4,5,6],4) // 3
+search([1,2,3,4,5,6],6) // 5
+search([1,2,3,4,5,6],11) // -1
+
+Developing a problem solving approach is incredibly important
+Thinking about code before writing code will always make you solve problems faster
+Be mindful about problem solving patterns
+Using frequency counters, multiple pointers, sliding window and divide and conquer will help you reduce time and space complexity and help solve more challenging problems.
 
