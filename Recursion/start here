@@ -51,6 +51,15 @@ What about big O?
 
 ->Measuring space complexity is a bit more challenging. You can measure the space complexity of a recursive function as the maximum number of functions on the call stack at a given time, since the call stack requires memory.
 
+Tail Call Optimization
+ES2015 allows for tail call optimization, where you can make some function calls without growing the call stack.
+
+By using the return keyword in a specific fashion we can extract output from a function without keeping it on the call stack.
+
+i have added some more example like power and productOfArray go and look at them if you want more practice .i will add more in the near future
+
+
+
 lets revise one more time .
 
 A recursive function is a function that invokes itself
@@ -58,3 +67,5 @@ Your recursive functions should always have a base case and be invoked with diff
 When using recursion, it's often essential to return values from one function to another to extract data from each function call
 Helper method recursion is an alternative that allows us to use an external scope in our recursive functions
 Pure recursion eliminates the need for helper method recursion, but can be trickier to understand at first
+
+thankYou 
