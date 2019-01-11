@@ -1,5 +1,5 @@
 # Data-structure-and-algorithm-in-javascript-masterguide
-This Repository  contains the information about data structures and algorithms in a very comprehensive way (i.e theory and practical).
+This Repository  contains the information about data structures and algorithms in a very comprehensive way (i.e theory and practical). language use javascript
 
 since its a datastructure and algorithm course you can start learning from wherever you want. but as we progress there is a learning path from scratch which i recommend you to follow. which described below step by step
 
@@ -12,3 +12,4 @@ since its a datastructure and algorithm course you can start learning from where
 3.approach to solve a problem
 4.problem solving patterns.
 5.Recursion.
+6.Searching.
