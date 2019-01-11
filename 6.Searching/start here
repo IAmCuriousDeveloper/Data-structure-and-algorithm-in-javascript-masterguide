@@ -1,0 +1,29 @@
+Objectives->
+1.Describe what a searching algorithm is
+2.Implement linear search on arrays
+3.Implement binary search on sorted arrays
+4.Implement a naive string searching algorithm
+
+How do we search?
+->Given an array, the simplest way to search for an value is to look at every element in the array and check if it's the value we want.
+
+JavaScript has search!
+There are many different search methods on arrays in JavaScript:
+
+indexOf
+includes
+find
+findIndex
+But how do these functions work?
+
+ex-> lets see linear search.
+at linearsearch.js
+
+now that you are familiar with the linear search now its time to see binary search 
+
+go to binarysearch.js
+
+now lets do one exercise
+naivesearch.js
+now that you know the naive search lets jump into the kmp solution
+kmp.js
