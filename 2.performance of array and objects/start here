@@ -1,5 +1,5 @@
 Arrays and objects are the built in data-structures we use in our day to day life. 
-in this section our primary focus is to see these datastructures through the eyes of big-objects
+in this section our primary focus is to see these datastructures through the eyes of big-oh
 
 objectives
 1.Understand how objects and arrays work, through the lens of Big O
@@ -11,7 +11,7 @@ i will not teach you how objects and array works here.so i recommemd you to plea
 lets start with object 
 A short definition from my side about object
 
-object is a lightweight datastructure which holds the unordered key value pair.
+object is a lightweight datastructure which holds the unordered key-value pair.
 
 ex-> 
 var obj = {
@@ -33,11 +33,11 @@ lets see some of the complexity of operations on objects
 3.Searching -> O(n) coz its unorderd its search one by one (key contains the value or not)
 4.Access -> O(1) access is done by key so its O(1)
 
-i will make it simple for it.
+i will make it simple for you.
 Think about it like this -> keys are the address and values are the people living in that address. 
 let take a case of searching which is O(n) since its an unorderd key value pair we have to go one by one searching address(key) for a specific person(value) which takes O(n). if we had an address it will be simple O(1).
 
-i hope this make sence to you.
+i hope this make sense to you.
 
 now lets see some of the Objects properties
 
@@ -65,7 +65,7 @@ when to use array
 2.When you need fast access / insertion and removal
 
 lets see complexity
-insertion - it depends where to enter
+insertion - it depends where to insert 
 removal - it depends from where to remove
 searching - O(N) 
 access - O(1) //coz we know the index
@@ -88,6 +88,8 @@ push and pop happens at the end so it takes O(1).
 while shift and unshift are taken place at the front of the array which means we have to maintain the index so O(n).
 
 you can read more about concat slice splice on mdn
+here is the link -> https://developer.mozilla.org/en-US/search?q=array+methods&topic=apps&topic=html&topic=css&topic=js&topic=api&topic=canvas&topic=svg&topic=webgl&topic=mobile&topic=webdev&topic=http&topic=webext&topic=standards
+
 concat is for join two array 
 slice is for remove some section/elements from the array
 splice is for remove/add some elements in between the array

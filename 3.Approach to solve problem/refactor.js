@@ -54,4 +54,4 @@ function charCount(str){
         return true;
     }
 
-//thats it for the final solution i came up with right now.
+//thats it for the final solution i came up with right now.i will appreciate the other solution also please Pull request me.
