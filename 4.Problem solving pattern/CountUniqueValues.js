@@ -20,3 +20,4 @@ countUniqueValues([-2,-1,-1,0,1]) // 4
 }
 
 //i am using two pointer here. 'i' is pointing to the starting of the array and the j is pointing to the second num of the array if both num matches we simply move the j if they not match we increment the i and  copy the element of the j to the ith index of the array so that at last we return the number of element on the array. 
+//its a bit tricky right? it takes me 20 min to solve this question at first.

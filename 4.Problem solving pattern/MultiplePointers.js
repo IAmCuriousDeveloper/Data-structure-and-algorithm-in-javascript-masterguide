@@ -20,6 +20,7 @@ function sumZero(arr){
             }
         }
     }
+    return undefined;
 }
 //Time Complexity - O(N^2)
 //Space Complexity - O(1)
@@ -28,7 +29,8 @@ function sumZero(arr){
 //refactored one (this approach is applicable only if we have sorted array.)
 //otherwise we have to do it in above manner.
 
-//in this approach we are using two pointers at left(start) and at right(end) of the array .we keep on checking wether left<right or not also we are keep track of the sum of both the values if sum = 0 then we found our elements if sum > 0 then we decrement right(from end) else increment from the left(start) and working towards the middle
+//in this approach we are using two pointers at left(start) and at right(end) of the array .we keep on checking wether left<right or not also we are keep track of the sum of both the values if sum = 0 then we found our elements if sum > 0 then we decrement right(from end) else increment from the left(start) and working towards the middle.
+
 function sumZero(arr){
     let left = 0;
     let right = arr.length - 1;

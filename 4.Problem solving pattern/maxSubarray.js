@@ -6,7 +6,7 @@ maxSubarraySum([4,2,1,6],1) // 6
 maxSubarraySum([4,2,1,6,2],4) // 13
 maxSubarraySum([],4) // null
 
- function maxSubarraySum(arr,num){
+function maxSubarraySum(arr,num){
 if(num > arr.length){
     return null;
 }
@@ -22,12 +22,13 @@ for(let i = 0; i < arr.length-num+1;i++){
 }
 return max;
 }
+
 //O(n^2)
 
-//explanation function takes two argument array and the num if num is greater than array's length then we simply return null .then we set max variable to -infinity (to cover the edge case of negative no. i.e if we are not only deal with the positive no. then we are using another loop for the second argument(num) so that we add that much number each time.) then at last we use 'if' statement to check temp is greater than max or not if it is we set max the temp. 
+//above function takes two argument array and the num if num is greater than array's length then we simply return null .then we set max variable to -infinity (to cover the edge case of negative no. i.e if we are not only deal with the positive no. then we are using another loop for the second argument(num) so that we add that much number each time.) then at last we use 'if' statement to check temp is greater than max or not if it is we set max the temp. 
 //one thing to notice that we are using two loops thats a naive solution and the second thing is (in the first loop we set the condition so that we are not over passing the boundary of the array.) 
 
-//now lets see the sliding window solution
+//now lets see the sliding window solution i know its a lot but keep practicing
 
 function maxSubarraySumq(arr,num){
     let maxsum = 0;
@@ -44,6 +45,6 @@ function maxSubarraySumq(arr,num){
     return maxsum;
 }
 
-//explanation -> in this approach we act smartly we have two variable maxsum and tempsum and we loop one time to add all the number (provided by the second argument) to maxsum .then instead of increment from the beginning and adding allover again we simply add from the right and subtract from the beginning and keep on checking for the maxsum. 
+//explanation -> in this approach we act smartly we have two variable maxsum and tempsum and we loop one time to add all the number (provided by the second argument) to maxsum .then instead of increment from the beginning and adding allover again we simply add from the right and subtract from the left and keep on checking for the maxsum. 
 
 //O(n)
