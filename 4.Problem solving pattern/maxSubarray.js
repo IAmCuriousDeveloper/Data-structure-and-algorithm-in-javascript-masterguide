@@ -30,7 +30,7 @@ return max;
 
 //now lets see the sliding window solution i know its a lot but keep practicing
 
-function maxSubarraySumq(arr,num){
+function maxSubarraySum(arr,num){
     let maxsum = 0;
     let tempsum = 0;
     if(arr.length<num) return null;
@@ -44,6 +44,7 @@ function maxSubarraySumq(arr,num){
     }
     return maxsum;
 }
+
 
 //explanation -> in this approach we act smartly we have two variable maxsum and tempsum and we loop one time to add all the number (provided by the second argument) to maxsum .then instead of increment from the beginning and adding allover again we simply add from the right and subtract from the left and keep on checking for the maxsum. 
 
