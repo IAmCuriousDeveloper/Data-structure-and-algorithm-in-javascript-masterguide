@@ -25,7 +25,7 @@ return max;
 
 //O(n^2)
 
-//above function takes two argument array and the num if num is greater than array's length then we simply return null .then we set max variable to -infinity (to cover the edge case of negative no. i.e if we are not only deal with the positive no. then we are using another loop for the second argument(num) so that we add that much number each time.) then at last we use 'if' statement to check temp is greater than max or not if it is we set max the temp. 
+//above function takes two argument array and the num if num is greater than array's length then we simply return null .then we set max variable to -infinity (to cover the edge case of negative no. i.e if we are not only deal with the positive no. then we are using another loop for the second argument(num) so that we add that much number each time.) then at last we use 'if' statement to check temp is greater than max or not if it is we set max with temp. 
 //one thing to notice that we are using two loops thats a naive solution and the second thing is (in the first loop we set the condition so that we are not over passing the boundary of the array.) 
 
 //now lets see the sliding window solution i know its a lot but keep practicing
@@ -34,11 +34,11 @@ function maxSubarraySumq(arr,num){
     let maxsum = 0;
     let tempsum = 0;
     if(arr.length<num) return null;
-    for(let i = 0;i<num;i+=){
+    for(let i = 0;i<num;i+=i){
         maxsum += arr[i];
     }
     tempsum = maxsum;
-    for(let i = num;i<arr.length ;i+=){
+    for(let i = num;i<arr.length ;i++){
         tempsum = tempsum - arr[i -num] + arr[i];
         maxsum = Math.max(maxsum,tempsum);
     }
