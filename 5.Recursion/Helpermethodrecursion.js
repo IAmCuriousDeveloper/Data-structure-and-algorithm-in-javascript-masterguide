@@ -15,7 +15,8 @@ function outer(input){
 
 //what is helper function lets see this first
 //in this we have two function 1st is outer function then one inside it which recurse(iterate) itself 
-//we call the outer function only inside one called itself.
+//we call the outer function only 
+//inside one recurse itself. 
 
 //if you are familier with closure of javascript it something like it only (but not closure).we remember the outerscopedvariable if we call iterative(inside) function again and again. 
 
@@ -42,3 +43,5 @@ function collectOddValues(arr){
     return result;
 
 }
+
+collectOddValues([1,2,3,4,5,6,7,8,9]);//return arr with a old value
