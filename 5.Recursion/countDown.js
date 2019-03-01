@@ -8,5 +8,5 @@ function countDown(num){
     countDown(num);
 }
 
-//there is two thing to note here the input and the base base 
+//there is two thing to note here the input and the base 
 //we have to terminate the iteration by base case ,if we dont do that it will ran to infinite loop

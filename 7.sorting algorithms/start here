@@ -38,3 +38,7 @@ there is one optimized bubblesort file do check it out.it will be good for the i
 now check selectionsort.js
 
 time for the insertionsort.js
+
+now lets see some more challenging sorting algorithms (also the widely used sorting algorithm coz they scale well)
+
+go to mergesort.js
