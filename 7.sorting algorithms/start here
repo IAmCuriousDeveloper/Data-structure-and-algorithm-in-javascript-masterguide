@@ -42,3 +42,5 @@ time for the insertionsort.js
 now lets see some more challenging sorting algorithms (also the widely used sorting algorithm coz they scale well)
 
 go to mergesort.js
+now if you are done with mergesort time to jump into quicksort
+go to quickSort.js
