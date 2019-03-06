@@ -9,22 +9,43 @@
 // The helper should do this in place, that is, it should not create a new array
 // When complete, the helper should return the index of the pivot
 
-function pivot (arr,first,last){
-    let mainpivot = first;
-    let pivot = first;
-    for(let i =1;i<last-1;i++){
-        if(arr[pivot]<arr[i]) continue;
-        else {
-        swap(pivot,i);
-        pivot++;
+// The runtime of quick sort depends in part on how one selects the pivot
+// Ideally, the pivot should be chosen so that it's roughly the median value in the data set you're sorting
+// For simplicity, we'll always choose the pivot to be the first element (we'll talk about consequences of this later)
+
+//================================================================================================
+//pseudocode
+// It will help to accept three arguments: an array, a start index, and an end index (these can default to 0 and the array length minus 1, respectively)
+// Grab the pivot from the start of the array 
+// Store the current pivot index in a variable (this will keep track of where the pivot should end up)
+// Loop through the array from the start until the end
+// If the pivot is greater than the current element, increment the pivot index variable and then swap the current element with the element at the pivot index
+// Swap the starting element (i.e. the pivot) with the pivot index
+// Return the pivot index
+
+
+function pivot (arr,first=0,last=arr.length-1){
+    //regular swap function
+    function swap (arr,index,i){
+        let temp = arr[index];
+        arr[index] = arr[i];
+        arr[i] = temp;
+    }
+   let pivot = arr[first]; //value
+   let index = first //index (it defines how many elements are there which are smaller)
+    for (let i = 1;i <arr.length;i++){
+        //if pivot is smaller don't do anything
+        //if greater ,increment the index(i.e one element we found which is smaller and swap it with current element i )
+        if(pivot > arr[i]){
+                index++
+                swap(arr,index,i);
         }
     }
-
-    function swap(a,b){
-        let temp;
-        temp = arr[a];
-        arr[a] = arr[b] ;
-        arr[b] = temp;
-    }
-    return pivot;
-}
+    //after loop swap it and return it
+    swap(arr,index,first)
+    return index;
+    
+}    
+                  I       
+let arr = [4,1,2,3,5,6,7,8]; //3
+        
