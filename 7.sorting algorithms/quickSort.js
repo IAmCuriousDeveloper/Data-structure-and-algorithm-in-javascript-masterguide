@@ -16,36 +16,47 @@
 //================================================================================================
 //pseudocode
 // It will help to accept three arguments: an array, a start index, and an end index (these can default to 0 and the array length minus 1, respectively)
-// Grab the pivot from the start of the array 
+// Grab the pivot from the start of the array
 // Store the current pivot index in a variable (this will keep track of where the pivot should end up)
 // Loop through the array from the start until the end
 // If the pivot is greater than the current element, increment the pivot index variable and then swap the current element with the element at the pivot index
 // Swap the starting element (i.e. the pivot) with the pivot index
 // Return the pivot index
 
+function pivot(arr, left = 0, right = arr.length - 1) {
+  //regular swap function
+  function swap(arr, index, i) {
+    let temp = arr[index];
+    arr[index] = arr[i];
+    arr[i] = temp;
+  }
+  let pivot = arr[left]; //value
+  let index = left; //index (it defines how many elements are there which are smaller)
+  for (let i = 1; i < arr.length; i++) {
+    //if pivot is smaller don't do anything
+    //if greater ,increment the index(i.e one element we found which is smaller and swap it with current element i )
+    if (pivot > arr[i]) {
+      index++;
+      swap(arr, index, i);
+    }
+  }
+  //after loop swap it and return it
+  swap(arr, index, left);
+  return index;
+}
 
-function pivot (arr,first=0,last=arr.length-1){
-    //regular swap function
-    function swap (arr,index,i){
-        let temp = arr[index];
-        arr[index] = arr[i];
-        arr[i] = temp;
+//lets implement the quicksort 
+
+function quicksort (arr,left=0,right=arr.length-1){
+    //continue till we have single element left in the array 
+    if(left<right){
+        pivotindex = pivot(arr,left,right);
+        //quicksorting the left side 
+        quicksort(arr,left,pivotindex-1);
+        //quicksorting the right side 
+        quicksort(arr,right,pivotindex+1);
     }
-   let pivot = arr[first]; //value
-   let index = first //index (it defines how many elements are there which are smaller)
-    for (let i = 1;i <arr.length;i++){
-        //if pivot is smaller don't do anything
-        //if greater ,increment the index(i.e one element we found which is smaller and swap it with current element i )
-        if(pivot > arr[i]){
-                index++
-                swap(arr,index,i);
-        }
-    }
-    //after loop swap it and return it
-    swap(arr,index,first)
-    return index;
-    
-}    
-                  I       
-let arr = [4,1,2,3,5,6,7,8]; //3
-        
+    return arr;
+}
+
+let arr = [3,4,5,6,8,1,0,8];
