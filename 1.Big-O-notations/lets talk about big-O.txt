@@ -40,7 +40,7 @@ console.log(`Time Elapsed: ${(t2 - t1) / 1000} seconds.`)
 
 The Problem with Time.
 Different machines will record different times
-The same machine will record different times!
+even The same machine will record different times!
 For fast algorithms, speed measurements may not be precise enough?
 
 Big O Notation is a way to formalize fuzzy counting.
