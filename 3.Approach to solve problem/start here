@@ -1,7 +1,7 @@
 In this section i will tell you how i approach to solve problem (most of the time).
 These approaches i have learned from my teachers. and i hope i will make them clear for you too
 
-so lets write an objectives
+so lets write an objectives of this section
 1.Define what an algorithm is
 2.Devise a plan to solve algorithms
 
@@ -28,8 +28,8 @@ These above steps are taken from the book "how to solve it" by george polya
 
 step1.Understand the problem->
 1.Can I restate the problem in my own words?
-2.What are the inputs that go into the problem?
-3.What are the outputs that should come from the solution to the problem?
+2.What are the inputs that can go into the problem?
+3.What are the outputs that should come as the solution to the problem?
 4.Can the outputs be determined from the inputs? In other words, do I have enough information to solve the problem? (You may not be able to answer this question until you set about solving the problem. That's okay; it's still worth considering the question at this early stage.)
 5.How should I label the important pieces of data that are a part of the problem?
 
