@@ -60,3 +60,14 @@ function quicksort (arr,left=0,right=arr.length-1){
 }
 
 let arr = [3,4,5,6,8,1,0,8];
+
+//time complexity of quick sort 
+//best case ->O(nlogn)
+//avg case ->O(nlogn) logn decomposition and n comparision
+//worst case ->O(n^2);
+//space complexity ->O(logn) its a stack space 
+//worst space complexity is ->O(n^2);
+
+//its very important to choose pivot widely coz if in any case our array is already sorted then we divide the array in one side only (i.e) either left or right 
+//there is one more thing you can do while making quicksort which i learned in my made easy classes is use randomized quick sort
+
