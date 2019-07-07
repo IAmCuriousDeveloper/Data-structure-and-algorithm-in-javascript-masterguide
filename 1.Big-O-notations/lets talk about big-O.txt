@@ -49,11 +49,11 @@ It allows us to talk formally about how the runtime of an algorithm grows as the
 We say that an algorithm is O(f(n)) if the number of simple operations the computer has to do is eventually less than a constant times f(n), as n increases
 
 f(n) could be linear (f(n) = n)
-f(n) could be quadratic (f(n) = n  )
+f(n) could be quadratic (f(n) = n^2)
 f(n) could be constant (f(n) = 1)
 f(n) could be something entirely different!
 
-in the folder see there are two files addUpTo(n) function 1 and 2 whiich gives us two big-O O(1) and O(n) respectively.
+in the folder see there are two files addUpTo(n) function 1 and 2 which gives us two big-O O(1) and O(n) respectively.
 
 then see the countupandown function and play with it which gives O(n).
 then see the nested loop version of printallpairs function which gives O(n^2).
