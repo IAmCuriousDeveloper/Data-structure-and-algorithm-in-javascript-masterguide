@@ -20,7 +20,7 @@ javascript has the sort method but it does not works the way u think for Example
 // [ 10, 15, 4, 6 ] now look what happens it gets mad when we use numbers
 
 
-now lets see what javascript sort function works
+now lets see how javascript sort function works
 
 go to javascriptsort.js
 
