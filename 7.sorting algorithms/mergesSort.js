@@ -1,7 +1,7 @@
 //The sorting algorithms we've learned so far don't scale well
 //Try out bubble sort on an array of 100000 elements, it will take quite some time!
 //We need to be able to sort large arrays more quickly
-//There is a family of sorting algorithms that can improve time complexity from O(n  ) to O(n log n)
+//There is a family of sorting algorithms that can improve time complexity from O(n^2) to O(n log n)
 //There's a tradeoff between efficiency and simplicity
 //The more efficient algorithms are much less simple, and generally take longer to understand
 
@@ -18,7 +18,6 @@
 // If the value in the first array is smaller than the value in the second array, push the value in the first array into our results and move on to the next value in the first array
 // If the value in the first array is larger than the value in the second array, push the value in the second array into our results and move on to the next value in the second array
 // Once we exhaust one array, push in all remaining values from the other array
-
 
 function merge(arr1, arr2) {
   let results = [];
@@ -52,17 +51,17 @@ function merge(arr1, arr2) {
 }
 
 //the below function has just one method recursively split the two array until they have the lenght of 1 then pass the halves (left and right) to the merge function above
- function mergeSort(arr){
-     if(arr.length<=1) return arr; 
-     let mid = Math.floor(arr.length/2);
-     let left = mergeSort(arr.slice(0,mid));
-     let right = mergeSort(arr.slice(mid));
- }
+function mergeSort(arr) {
+  if (arr.length <= 1) return arr;
+  let mid = Math.floor(arr.length / 2);
+  let left = mergeSort(arr.slice(0, mid)); //before mid
+  let right = mergeSort(arr.slice(mid));
+}
 
 //  In order to implement merge sort, it's useful to first implement a function responsible for merging two sorted arrays
 //  Given two arrays which are sorted, this helper function should create a new array which is also sorted, and consists of all of the elements in the two input arrays
 //  This function should run in O(n + m) time and O(n + m) space and should not modify the parameters passed to it.
 
-//time complexity O(nlogn) space complexity O(n). 
+//time complexity O(nlogn) space complexity O(n).
 
 //why O(nlogn)? coz O(logn) decomposition and O(n) comparision per decompostion
