@@ -56,6 +56,7 @@ function mergeSort(arr) {
   let mid = Math.floor(arr.length / 2);
   let left = mergeSort(arr.slice(0, mid)); //before mid
   let right = mergeSort(arr.slice(mid));
+  return merge(left, right);
 }
 
 //  In order to implement merge sort, it's useful to first implement a function responsible for merging two sorted arrays
