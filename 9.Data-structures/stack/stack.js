@@ -3,6 +3,7 @@
 // undo/redo
 //route
 //there are many ways we can implement a stack
+//they are not built in datastructure in Js
 //lets start with the array implementations
 
 var stack = [];
@@ -67,3 +68,9 @@ stack.push(2);
 stack.push(3);
 
 console.log(stack);
+
+//time complexity
+// insertion -O(1)
+// removal O(1)
+// searching O(n)
+// access O(n)
