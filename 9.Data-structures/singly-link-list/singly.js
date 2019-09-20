@@ -210,3 +210,8 @@ newLinkList.push("i am the third one");
 //console.log(newLinkList.get(0));
 newLinkList.insert(1, "iam a index one");
 console.log(newLinkList);
+
+//big o of singly link list common operation
+//insertion = O(1)
+//removal -> depends if removing from the 1st then O(1) if from end O(n);
+//searching and acces both are O(n)
