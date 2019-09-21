@@ -61,6 +61,9 @@ class Queue {
     this.size--;
     return returnedNode.value;
   }
+  size() {
+    return this.size;
+  }
 }
 
 //time complexity
