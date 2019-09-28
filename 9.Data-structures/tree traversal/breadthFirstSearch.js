@@ -91,6 +91,53 @@ class BinarySearchTree {
 
     return visited;
   }
+  //ROOT-LEFT-RIGHT
+  preOrder() {
+    var visited = [];
+    if (this.root === null) return "tree is empty";
+    var current = this.root;
+    function addToVisited(node) {
+      visited.push(node.value);
+      if (node.left) addToVisited(node.left);
+      if (node.right) addToVisited(node.right);
+    }
+    addToVisited(current);
+    return visited;
+  }
+  //L-R-Root
+  postOrder() {
+    var visited = [];
+    if (this.root === null) return "tree is empty";
+    var current = this.root;
+    function addToVisited(node) {
+      if (node.left) {
+        addToVisited(node.left);
+      }
+      if (node.right) {
+        addToVisited(node.right);
+      }
+      visited.push(node.value);
+    }
+    addToVisited(current);
+    return visited;
+  }
+  //L-ROOT-RIGHT
+  inOrder() {
+    var visited = [];
+    if (this.root === null) return "tree is empty";
+    var current = this.root;
+    function addToVisited(node) {
+      if (node.left) {
+        addToVisited(node.left);
+      }
+      visited.push(node.value);
+      if (node.right) {
+        addToVisited(node.right);
+      }
+    }
+    addToVisited(current);
+    return visited;
+  }
 }
 var myBst = new BinarySearchTree();
 myBst.insert(10);
@@ -101,5 +148,20 @@ myBst.insert(11);
 myBst.insert(13);
 myBst.insert(7);
 
+//our tree
+//         10
+//       8      12
+//     7    9  11  13
+
 var bfs = myBst.BFS();
-console.log(bfs);
+//console.log(bfs);
+//console.log(myBst.preOrder());
+//console.log(myBst.postOrder());
+console.log(myBst.inOrder());
+
+//bfs require more space when tree is large (because it push its childern on queue to visit
+
+//inorder advantage -> we get the increasing order of our node's value
+//frequently used with the BST
+
+//preorder -> can be used to export tree structure so that it can be copied or reconstruct
