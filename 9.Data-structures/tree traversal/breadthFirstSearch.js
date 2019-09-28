@@ -1,19 +1,14 @@
-//what is tree?
-// A data structure that consists of nodes in a parent / child relationship
+//what is breadth first search
+//it is the traversing a tree in level by level
+//for example
+//        10
+//     7     15
+//   3  8  14  16
 
-//list are linear but trees are not linear
-//there is only parent -> child relationship only ,we cant have slibling->sibling relation or child to parent relation
-//tree should contain only one root
+//order of traversing will be 10 ,7,15,3,8,14,16
 
-//some terminolgy
-// Root - The top node in a tree.
-// Child -A node directly connected to another node when moving away from the Root.
-// Parent - The converse notion of a child.
-// Siblings -A group of nodes with the same parent.
-// Leaf - A node with no children.
-// Edge - The connection between one node and another.
-//tip-> its good to have mental model before starting code
-//visualize tree -> make a random tree then start code
+//lets make a tree class
+//i have used the binary tree but it can be any tree
 class Node {
   constructor(value) {
     this.value = value;
@@ -80,8 +75,23 @@ class BinarySearchTree {
       }
     }
   }
-}
+  BFS() {
+    var visited = [];
+    var queue = [];
+    if (this.root === null) return "tree is empty";
+    var node = this.root;
+    queue.push(node);
+    while (queue.length != false) {
+      //taking out first element
+      node = queue.shift();
+      visited.push(node.value);
+      if (node.left) queue.push(node.left);
+      if (node.right) queue.push(node.right);
+    }
 
+    return visited;
+  }
+}
 var myBst = new BinarySearchTree();
 myBst.insert(10);
 myBst.insert(8);
@@ -90,17 +100,6 @@ myBst.insert(9);
 myBst.insert(11);
 myBst.insert(13);
 myBst.insert(7);
-//console.log(myBst);
-console.log(myBst.find(12));
 
-//tree structure
-//        10
-//     8       12
-//   7   9  11   13
-
-//time complexity
-//insertion -> O(log(n))
-//searching -> O(log(n))
-//above two is not always true there are two edge case
-//1.node can go all the way left side at the bottom or
-//2.node can go all the way right side at the bottom
+var bfs = myBst.BFS();
+console.log(bfs);
