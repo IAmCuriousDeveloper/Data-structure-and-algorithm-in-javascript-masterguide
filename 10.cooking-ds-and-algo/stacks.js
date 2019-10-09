@@ -76,11 +76,55 @@ Stack.prototype.Stacksize = function() {
   console.log(`the size of your stack is ${this.size}`);
 };
 
-var mystack = new Stack();
-mystack.push("milk");
-mystack.push("cheese");
-mystack.push("butter");
-mystack.push("soya");
+Stack.prototype.peek = function() {
+  if (!this.first) return null; //this line is just for minStack(remove it for simple stack)
+  return this.first.value;
+};
 
-mystack.pop();
-mystack.Stacksize();
+var mystack = new Stack();
+// mystack.push("milk");
+// mystack.push("cheese");
+// mystack.push("butter");
+// mystack.push("soya");
+
+// mystack.pop();
+// mystack.Stacksize();
+// mystack.peek();
+
+//========================================================================================================
+//MIN-STACK
+//implement a min stack which gives the minimum value from the stack in constant time
+
+function MinStack() {
+  this._min = new Stack();
+}
+//o(1)
+MinStack.prototype.push = function(value) {
+  if (this._min.peek() < value) {
+    this._min.push(this._min.peek());
+  } else {
+    this._min.push(value);
+  }
+};
+
+MinStack.prototype.pop = function() {
+  this._min.pop();
+};
+
+MinStack.prototype.MinStacksize = function() {
+  this._min.Stacksize();
+};
+
+MinStack.prototype.peek = function() {
+  this._min.peek();
+};
+
+var myMinStack = new MinStack();
+
+myMinStack.push(34);
+myMinStack.push(13);
+myMinStack.push(56);
+myMinStack.push(12);
+myMinStack.push(90);
+
+console.log(myMinStack);
