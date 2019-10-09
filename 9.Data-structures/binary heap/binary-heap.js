@@ -168,3 +168,8 @@ console.log(maxHeap);
 // The child index you swapped to now becomes the new parent index.
 // Keep looping and swapping until neither child is larger than the element.
 // Return the old root!
+
+//TIME COMPLEXITY
+//INSERTION O(LOGN)
+//REMOVAL  O(LOGN)
+//search O(n) //important because elements are inserted not according to greater or less than we cant go for serach in one side of tree
