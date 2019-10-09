@@ -93,3 +93,5 @@ console.log(myPriority);
 // console.log(myPriority.deQueue());
 // console.log(myPriority.deQueue());
 //max priority element will out first
+
+//right now our priority queue will not ensure that the elemnt with same priority will deQueued with fcfs basis ,for that we have to implement different logic like add date /time to property of the node
