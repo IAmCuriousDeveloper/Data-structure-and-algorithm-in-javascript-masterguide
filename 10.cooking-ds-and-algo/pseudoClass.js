@@ -1,5 +1,5 @@
 //lets build our pseudoclass without class syntax
-
+//this pattern is called pseudoclasical style of writing javascript
 //making constructor or factory functions
 function Building(floors) {
   //making this {} work of new
@@ -17,13 +17,13 @@ Building.prototype.countFloors = function() {
 };
 
 //making instances
-var myHouse = new Building(2);
-var muOffice = new Building(12);
+var myHouse = new Building(4);
+var myOffice = new Building(12);
 myHouse.countFloors(); //i have 4 floors
 
 console.log(myHouse);
 //myHouse.__proto__ === Building.prototype -> true
-//in the above call to myFloors our myhouse instance will look on __proto__ and from there it looks on prototype object of Building ...because every function is also an object
+//in the above call to countFloors our myhouse instance will look on __proto__ and from there it looks on prototype object of Building ...because every function is also an object
 
 //The results of the shared method depend on the unique instance values which are created at call-time inside each function's scope.
 
