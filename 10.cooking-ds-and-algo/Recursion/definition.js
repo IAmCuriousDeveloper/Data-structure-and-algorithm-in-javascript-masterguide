@@ -7,6 +7,12 @@ function callMe() {
 
 callMe();
 
+//recipe
+//1.identify base case
+//2.identify recursive case
+//3.return where appropriate
+//4.write procedure for each case which bring us close to the base case
+
 //1. Write a function that loops through the numbers n down to 0. If you haven't done so try using a while loop to do this.
 
 var countDown = function(n) {
@@ -79,4 +85,17 @@ var recursiveReverse = function(arr) {
   addItems(arr);
 
   return reversedArr;
+};
+
+var recursiveReverse = arr => {
+  var result = [];
+  function internalReverse(arr) {
+    while (arr.length > 0) {
+      var content = arr.pop();
+      result.push(content);
+      internalReverse(arr);
+    }
+    internalReverse(arr);
+  }
+  return result;
 };
