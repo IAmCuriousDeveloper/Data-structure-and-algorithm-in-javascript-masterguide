@@ -87,3 +87,29 @@ lets go the the refactor.js refactor version of our solution.
 
 That it now lets jump into section 4 Problem solving patterns.
 
+
+ingredient to learn ds
+
+1. Learn Data Structure Concept
+
+    - Draw it
+
+    - Create the API/operation methods
+
+2. Build the Data Structure
+
+    - Pseudocode the implementation
+
+    - Code the data structure constructor
+
+3. Utilize the Data Structure
+
+    - Put your data structure to work!
+
+    - Pair it with an algorithm if needed
+
+4. Understand Data Structure
+
+    - What is the time complexity? (coming soon)
+
+    - How can you optimize?
